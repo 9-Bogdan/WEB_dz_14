@@ -1,10 +1,10 @@
-.. RestAPI documentation master file, created by
-   sphinx-quickstart on Fri Oct 27 18:12:39 2023.
+.. Rest API documentation master file, created by
+   sphinx-quickstart on Mon Oct 30 16:15:34 2023.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to RestAPI's documentation!
-===================================
+Welcome to Rest API's documentation!
+====================================
 
 .. toctree::
    :maxdepth: 2
@@ -31,6 +31,7 @@ REST API routes Users
   :undoc-members:
   :show-inheritance:
 
+
 REST API routes Auth
 =========================
 .. automodule:: routes.auth
@@ -38,12 +39,14 @@ REST API routes Auth
   :undoc-members:
   :show-inheritance:
 
+
 REST API service Auth
 =========================
 .. automodule:: services.auth
   :members:
   :undoc-members:
   :show-inheritance:
+
 
 REST API service Email
 =========================

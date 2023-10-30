@@ -8,9 +8,9 @@
 import sys
 import os
 
-sys.path.append(os.path.abspath('.'))
-# print(os.path.abspath('.'))
-project = 'RestAPI'
+sys.path.append(os.path.abspath('..'))
+
+project = 'Rest API'
 copyright = '2023, Bogdan'
 author = 'Bogdan'
 

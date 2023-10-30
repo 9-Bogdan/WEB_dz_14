@@ -1,9 +1,9 @@
 from sqlalchemy import Column, Integer, String,Date,Table, Boolean
-from sqlalchemy.orm import relationship
+from sqlalchemy.orm import relationship, declarative_base
 from sqlalchemy.sql.schema import ForeignKey
 from sqlalchemy.sql.sqltypes import DateTime
-from .connect_db import Base, engine
-
+# from connect_db import Base, engine
+Base = declarative_base()
 class UserAuth(Base):
     __tablename__ = 'users_auth'
     id = Column(Integer, primary_key=True, index=True)
@@ -24,4 +24,4 @@ class User(Base):
     phone_numbers = Column(String,nullable=False,index=True)
     other_description = Column(String, nullable=True, default=None)
 
-Base.metadata.create_all(bind=engine)
+# Base.metadata.create_all(bind=engine)
